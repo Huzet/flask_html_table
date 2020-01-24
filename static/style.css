@@ -1,0 +1,12 @@
+h1 {
+    color: darkblue;
+}
+
+
+table, th, td {
+    padding-left:40px;
+    padding-right:40px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: darkgrey;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Table<L</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>Users</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+            </tr>
+        </thead>
+        {% for item in range(length) %}
+        <tr>
+            <td>{{user[item]['first_name']}}</td>
+            <td>{{user[item]['last_name']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
